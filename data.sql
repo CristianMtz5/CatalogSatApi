@@ -1,0 +1,23 @@
+insert into forma_pago (forma_pago, descripcion) values (01, 'Efectivo');
+insert into forma_pago (forma_pago, descripcion) values (02, 'Cheque nominativo');
+insert into forma_pago (forma_pago, descripcion) values (03, 'Transferencia electrónica de fondos');
+insert into forma_pago (forma_pago, descripcion) values (04, 'Tarjeta de crédito');
+insert into forma_pago (forma_pago, descripcion) values (05, 'Monedero electrónico');
+insert into forma_pago (forma_pago, descripcion) values (06, 'Dinero electrónico');
+insert into forma_pago (forma_pago, descripcion) values (08, 'Vales de despensa');
+insert into forma_pago (forma_pago, descripcion) values (12, 'Dación en pago');
+insert into forma_pago (forma_pago, descripcion) values (13, 'Pago por subrogación');
+insert into forma_pago (forma_pago, descripcion) values (14, 'Pago por consignación');
+insert into forma_pago (forma_pago, descripcion) values (15, 'Condonación');
+insert into forma_pago (forma_pago, descripcion) values (17, 'Compensación');
+insert into forma_pago (forma_pago, descripcion) values (23, 'Novación');
+insert into forma_pago (forma_pago, descripcion) values (24, 'Confusión');
+insert into forma_pago (forma_pago, descripcion) values (25, 'Remisión de deuda');
+insert into forma_pago (forma_pago, descripcion) values (26, 'Prescripción o caducidad');
+insert into forma_pago (forma_pago, descripcion) values (27, 'A satisfacción del acreedor');
+insert into forma_pago (forma_pago, descripcion) values (28, 'Tarjeta de débito');
+insert into forma_pago (forma_pago, descripcion) values (29, 'Tarjeta de servicios');
+insert into forma_pago (forma_pago, descripcion) values (30, 'Aplicación de anticipos');
+insert into forma_pago (forma_pago, descripcion) values (31, 'Intermediario pagos');
+insert into forma_pago (forma_pago, descripcion) values (99, 'Por definir');
+

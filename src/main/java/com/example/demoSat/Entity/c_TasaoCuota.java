@@ -1,0 +1,38 @@
+package com.example.demoSat.Entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Table(name="tasaOCuota")
+public class c_TasaoCuota {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer cTasaoCuota;
+    @Column
+    private String rangoOrFijo;
+    @Column
+    private Double valorMinimo;
+    @Column
+    private Double valorMaximo;
+    @Column
+    private String impuesto;
+    @Column
+    private String factor;
+    @Column
+    private String traslado;
+    @Column
+    private String retencion;
+}
