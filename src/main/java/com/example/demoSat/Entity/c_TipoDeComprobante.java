@@ -23,4 +23,6 @@ public class c_TipoDeComprobante {
     private String cTipoDeComprobante;
     @Column
     private String descripcion;
+    @Column
+    private Boolean status;
 }

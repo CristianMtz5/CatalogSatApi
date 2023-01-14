@@ -20,7 +20,9 @@ import lombok.Setter;
 public class c_Periodicidad {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer cPeriodicidad;
+    private String cPeriodicidad;
     @Column
     private String descripcion;
+    @Column
+    private Boolean status;
 }

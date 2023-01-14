@@ -28,5 +28,7 @@ public class c_UsoCFDI {
     @Column
     private String moral;
     @Column
-    private Integer regimenFiscalReceptor;
+    private String regimenFiscalReceptor;
+    @Column
+    private Boolean status;
 }

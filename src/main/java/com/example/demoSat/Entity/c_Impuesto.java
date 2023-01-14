@@ -20,7 +20,7 @@ import lombok.Setter;
 public class c_Impuesto {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer impuesto;
+    private String cImpuesto;
     @Column
     private String descripcion;
     @Column
@@ -29,5 +29,6 @@ public class c_Impuesto {
     private String traslado;
     @Column
     private String localFederal;
-    
+    @Column
+    private Boolean status;
 }   

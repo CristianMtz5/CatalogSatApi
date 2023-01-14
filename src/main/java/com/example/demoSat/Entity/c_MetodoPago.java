@@ -23,4 +23,6 @@ public class c_MetodoPago {
     private String cMetodoPago;
     @Column
     private String descripcion;
+    @Column
+    private Boolean status;
 }

@@ -21,4 +21,6 @@ public class c_TipoFactor {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private String cTipoFactor;
+    @Column
+    private Boolean status;
 }

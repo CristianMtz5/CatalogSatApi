@@ -20,7 +20,9 @@ import lombok.Setter;
 public class c_Exportacion {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer cExportacion;
+    private String cExportacion;
     @Column
     private String descripcion;
+    @Column
+    private Boolean status;
 }

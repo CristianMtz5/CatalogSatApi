@@ -19,14 +19,14 @@ import lombok.Setter;
 @Table(name="tasaOCuota")
 public class c_TasaoCuota {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer cTasaoCuota;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer cTasaCuota;
     @Column
-    private String rangoOrFijo;
+    private String rangoFijo;
     @Column
-    private Double valorMinimo;
+    private String valorMinimo;
     @Column
-    private Double valorMaximo;
+    private String valorMaximo;
     @Column
     private String impuesto;
     @Column
@@ -35,4 +35,6 @@ public class c_TasaoCuota {
     private String traslado;
     @Column
     private String retencion;
+    @Column
+    private Boolean status;
 }

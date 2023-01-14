@@ -20,11 +20,13 @@ import lombok.Setter;
 public class c_ClaveUnidad {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer cClaveUnidad;
+    private String cClaveUnidad;
     @Column
     private String nombre;
-    @Column
+    @Column(length = 600)
     private String descripcion;
     @Column
     private String simbolo;
+    @Column
+    private Boolean status;
 }

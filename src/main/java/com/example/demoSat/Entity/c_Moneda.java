@@ -1,4 +1,5 @@
 package com.example.demoSat.Entity;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -22,4 +23,8 @@ public class c_Moneda {
     private String cMoneda;
     @Column
     private String descripcion;
+    @Column
+    private String decimales;
+    @Column
+    private Boolean status;
 }
