@@ -23,7 +23,7 @@ public class c_ClaveProdServ {
     private String cClaveProdServ;
     @Column
     private String descripcion;
-    @Column
+    @Column(length = 600)
     private String palabrasSimilares;
     @Column
     private Boolean status;

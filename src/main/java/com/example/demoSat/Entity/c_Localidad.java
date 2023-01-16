@@ -1,5 +1,7 @@
 package com.example.demoSat.Entity;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,6 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,7 +25,7 @@ import lombok.Setter;
 public class c_Localidad {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idLocal;
+    private Integer idLocalidad;
     @Column
     private String cLocalidad;
     @Column
@@ -31,6 +34,9 @@ public class c_Localidad {
     private Boolean status;
 
     @ManyToOne
-    @JoinColumn(name="c_estado")
+    @JoinColumn(name="cEstado")
     private c_Estado estado;
+
+    @OneToMany(mappedBy = "codigopostal")
+    private List<c_CodigoPostal1> codigos;
 }
